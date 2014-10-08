@@ -1,4 +1,4 @@
 *.komodoproject
-models/db-settings.php
+db-settings.php
 models/.DS_Store
 MyAiefin
