@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `uf_configuration` (
 --
 
 INSERT INTO `uf_configuration` (`id`, `name`, `value`) VALUES
-(1, 'website_name', 'UserFrosting'),
+(1, 'website_name', 'AIEFIN'),
 (2, 'website_url', 'localhost/aiefin/'),
 (3, 'email', 'arafathnihar@gmail.com'),
 (4, 'activation', '0'),

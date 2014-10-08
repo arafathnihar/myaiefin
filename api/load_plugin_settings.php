@@ -6,9 +6,9 @@
  *
  * @author     Bryson Shepard <lilfade@fadedgaming.co>
  * @author     Project Manager: Alex Weissman
- * @copyright  2014 UserFrosting
+ * @copyright  2014 AIEFIN
  * @version    0.2.0
- * @link       http://www.userfrosting.com/
+ * @link       http://www.AIEFIN.com/
  */
 
 require_once("../models/config.php");
