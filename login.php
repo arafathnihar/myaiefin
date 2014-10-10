@@ -76,7 +76,7 @@ if ($email_login == 1) {
 
         <h1>Welcome to AIEFIN!</h1>
 
-        <p class="lead">A secure, modern user management system based on UserCake, jQuery, and Bootstrap.</p>
+        <p class="lead">A secure, financial system for AIESEC Sri Lanka.</p>
 
 		<small>Please sign in here:</small>
 

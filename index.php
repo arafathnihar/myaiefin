@@ -64,7 +64,7 @@ if(isUserLoggedIn()) {
 
         <h1>Welcome to AIEFIN!</h1>
 
-        <p class="lead">A secure, modern user management system based on UserCake, jQuery, and Bootstrap.</p>
+        <p class="lead">A secure, financial system for AIESEC Sri Lanka.</p>
 
 		<div class="row">
 
