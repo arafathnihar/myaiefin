@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.7.1
+-- version 3.3.7
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 08, 2014 at 02:47 PM
--- Server version: 5.6.20
--- PHP Version: 5.5.15
+-- Host: localhost
+-- Generation Time: Oct 11, 2014 at 12:11 PM
+-- Server version: 5.1.61
+-- PHP Version: 5.2.17
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,9 +26,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `uf_configuration` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(150) NOT NULL,
-  `value` varchar(150) NOT NULL
+  `value` varchar(150) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `uf_configuration` (
 
 INSERT INTO `uf_configuration` (`id`, `name`, `value`) VALUES
 (1, 'website_name', 'AIEFIN'),
-(2, 'website_url', 'localhost/aiefin/'),
+(2, 'website_url', 'aiefin.3eeweb.com/aiefin/'),
 (3, 'email', 'arafathnihar@gmail.com'),
 (4, 'activation', '0'),
 (5, 'resend_activation_threshold', '0'),
@@ -55,11 +55,12 @@ INSERT INTO `uf_configuration` (`id`, `name`, `value`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `uf_groups` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(150) NOT NULL,
   `is_default` tinyint(1) NOT NULL,
   `can_delete` tinyint(1) NOT NULL,
-  `home_page_id` int(11) NOT NULL
+  `home_page_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
@@ -77,10 +78,11 @@ INSERT INTO `uf_groups` (`id`, `name`, `is_default`, `can_delete`, `home_page_id
 --
 
 CREATE TABLE IF NOT EXISTS `uf_group_action_permits` (
-`id` int(10) unsigned NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `group_id` int(11) NOT NULL,
   `action` varchar(100) NOT NULL,
-  `permits` varchar(400) NOT NULL
+  `permits` varchar(400) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
@@ -112,9 +114,10 @@ INSERT INTO `uf_group_action_permits` (`id`, `group_id`, `action`, `permits`) VA
 --
 
 CREATE TABLE IF NOT EXISTS `uf_group_page_matches` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `group_id` int(11) NOT NULL,
-  `page_id` int(11) NOT NULL
+  `page_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=24 ;
 
 --
@@ -150,14 +153,15 @@ INSERT INTO `uf_group_page_matches` (`id`, `group_id`, `page_id`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `uf_nav` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `menu` varchar(75) NOT NULL,
   `page` varchar(175) NOT NULL,
   `name` varchar(150) NOT NULL,
   `position` int(11) NOT NULL,
   `class_name` varchar(150) NOT NULL,
   `icon` varchar(150) NOT NULL,
-  `parent_id` int(11) NOT NULL
+  `parent_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
@@ -184,9 +188,10 @@ INSERT INTO `uf_nav` (`id`, `menu`, `page`, `name`, `position`, `class_name`, `i
 --
 
 CREATE TABLE IF NOT EXISTS `uf_nav_group_matches` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `menu_id` int(11) NOT NULL,
-  `group_id` int(11) NOT NULL
+  `group_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
@@ -213,9 +218,10 @@ INSERT INTO `uf_nav_group_matches` (`id`, `menu_id`, `group_id`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `uf_pages` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `page` varchar(150) NOT NULL,
-  `private` tinyint(1) NOT NULL DEFAULT '0'
+  `private` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
@@ -246,12 +252,18 @@ INSERT INTO `uf_pages` (`id`, `page`, `private`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `uf_plugin_configuration` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(150) NOT NULL,
   `value` varchar(150) NOT NULL,
   `binary` int(1) NOT NULL,
-  `variable` varchar(150) NOT NULL
+  `variable` varchar(150) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `uf_plugin_configuration`
+--
+
 
 -- --------------------------------------------------------
 
@@ -260,7 +272,7 @@ CREATE TABLE IF NOT EXISTS `uf_plugin_configuration` (
 --
 
 CREATE TABLE IF NOT EXISTS `uf_users` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_name` varchar(50) NOT NULL,
   `display_name` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL,
@@ -274,7 +286,8 @@ CREATE TABLE IF NOT EXISTS `uf_users` (
   `sign_up_stamp` int(11) NOT NULL,
   `last_sign_in_stamp` int(11) NOT NULL,
   `enabled` tinyint(1) NOT NULL DEFAULT '1' COMMENT 'Specifies if the account is enabled.  Disabled accounts cannot be logged in to, but they retain all of their data and settings.',
-  `primary_group_id` tinyint(1) NOT NULL DEFAULT '1' COMMENT 'Specifies the primary group for the user.'
+  `primary_group_id` tinyint(1) NOT NULL DEFAULT '1' COMMENT 'Specifies the primary group for the user.',
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
@@ -282,7 +295,7 @@ CREATE TABLE IF NOT EXISTS `uf_users` (
 --
 
 INSERT INTO `uf_users` (`id`, `user_name`, `display_name`, `password`, `email`, `activation_token`, `last_activation_request`, `lost_password_request`, `lost_password_timestamp`, `active`, `title`, `sign_up_stamp`, `last_sign_in_stamp`, `enabled`, `primary_group_id`) VALUES
-(1, 'darshana', 'MCVP', '$2y$10$NC9fqAz0oSJY7yhufeQza.XlvRKTFVlMJqkrr9sLDSVhU55R8EKry', 'arafathnihar@gmail.com', '85f4fe7e204cf6c6e7495b3b1431b726', 1412768345, 0, 1412768345, 1, 'Master Account', 1412768345, 1412772435, 1, 2);
+(1, 'darshana', 'MCVP', '$2y$10$0jUu2.rUZp4KsXYkoJKBAOTaPZmWXQY5acUIXYd/7T8GAYdIg.ThK', 'arafathnihar@gmail.com', 'feae8868cc83baa32f5ed608be983a97', 1413043769, 0, 1413043769, 1, 'Master Account', 1413043769, 1413043829, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -291,11 +304,17 @@ INSERT INTO `uf_users` (`id`, `user_name`, `display_name`, `password`, `email`, 
 --
 
 CREATE TABLE IF NOT EXISTS `uf_user_action_permits` (
-`id` int(10) unsigned NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `action` varchar(100) NOT NULL,
-  `permits` varchar(400) NOT NULL
+  `permits` varchar(400) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `uf_user_action_permits`
+--
+
 
 -- --------------------------------------------------------
 
@@ -304,9 +323,10 @@ CREATE TABLE IF NOT EXISTS `uf_user_action_permits` (
 --
 
 CREATE TABLE IF NOT EXISTS `uf_user_group_matches` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
-  `group_id` int(11) NOT NULL
+  `group_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
@@ -316,136 +336,3 @@ CREATE TABLE IF NOT EXISTS `uf_user_group_matches` (
 INSERT INTO `uf_user_group_matches` (`id`, `user_id`, `group_id`) VALUES
 (1, 1, 1),
 (2, 1, 2);
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `uf_configuration`
---
-ALTER TABLE `uf_configuration`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `uf_groups`
---
-ALTER TABLE `uf_groups`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `uf_group_action_permits`
---
-ALTER TABLE `uf_group_action_permits`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `uf_group_page_matches`
---
-ALTER TABLE `uf_group_page_matches`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `uf_nav`
---
-ALTER TABLE `uf_nav`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `uf_nav_group_matches`
---
-ALTER TABLE `uf_nav_group_matches`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `uf_pages`
---
-ALTER TABLE `uf_pages`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `uf_plugin_configuration`
---
-ALTER TABLE `uf_plugin_configuration`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `uf_users`
---
-ALTER TABLE `uf_users`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `uf_user_action_permits`
---
-ALTER TABLE `uf_user_action_permits`
- ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `uf_user_group_matches`
---
-ALTER TABLE `uf_user_group_matches`
- ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `uf_configuration`
---
-ALTER TABLE `uf_configuration`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
---
--- AUTO_INCREMENT for table `uf_groups`
---
-ALTER TABLE `uf_groups`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `uf_group_action_permits`
---
-ALTER TABLE `uf_group_action_permits`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
---
--- AUTO_INCREMENT for table `uf_group_page_matches`
---
-ALTER TABLE `uf_group_page_matches`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=24;
---
--- AUTO_INCREMENT for table `uf_nav`
---
-ALTER TABLE `uf_nav`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
---
--- AUTO_INCREMENT for table `uf_nav_group_matches`
---
-ALTER TABLE `uf_nav_group_matches`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
---
--- AUTO_INCREMENT for table `uf_pages`
---
-ALTER TABLE `uf_pages`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
---
--- AUTO_INCREMENT for table `uf_plugin_configuration`
---
-ALTER TABLE `uf_plugin_configuration`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `uf_users`
---
-ALTER TABLE `uf_users`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `uf_user_action_permits`
---
-ALTER TABLE `uf_user_action_permits`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `uf_user_group_matches`
---
-ALTER TABLE `uf_user_group_matches`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
