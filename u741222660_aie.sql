@@ -336,3 +336,7 @@ CREATE TABLE IF NOT EXISTS `uf_user_group_matches` (
 INSERT INTO `uf_user_group_matches` (`id`, `user_id`, `group_id`) VALUES
 (1, 1, 1),
 (2, 1, 2);
+
+-- arafth's codes
+DELETE FROM `u741222660_aie`.`uf_nav_group_matches` WHERE `uf_nav_group_matches`.`id` = 2;
+INSERT INTO `u741222660_aie`.`uf_nav_group_matches` (`id`, `menu_id`, `group_id`) VALUES ('12', '9', '2'), ('13', '10', '2'), ('14', '11', '2');
