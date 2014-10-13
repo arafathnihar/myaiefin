@@ -87,7 +87,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
               <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
 
             </ol>
-
+<!--
             <div class="alert alert-success alert-dismissable">
 
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -110,7 +110,8 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
               
 
-            </div>
+              </div>
+              -->
 
           </div>
 
@@ -136,9 +137,9 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                   <div class="col-xs-6 text-right">
 
-                    <p class="announcement-heading">456</p>
+                    <p class="announcement-heading">6</p>
 
-                    <p class="announcement-text">New Mentions!</p>
+                    <p class="announcement-text">Event Alerts !</p>
 
                   </div>
 
@@ -154,7 +155,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <div class="col-xs-6">
 
-                      View Mentions
+                      View Events
 
                     </div>
 
@@ -208,7 +209,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <div class="col-xs-6">
 
-                      Complete Tasks
+                      Complete
 
                     </div>
 
@@ -244,9 +245,9 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                   <div class="col-xs-6 text-right">
 
-                    <p class="announcement-heading">18</p>
+                    <p class="announcement-heading">3</p>
 
-                    <p class="announcement-text">Crawl Errors</p>
+                    <p class="announcement-text">Petty cash  </p>
 
                   </div>
 
@@ -262,7 +263,8 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <div class="col-xs-6">
 
-                      Fix Issues
+                       notifications
+
 
                     </div>
 
@@ -298,9 +300,9 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                   <div class="col-xs-6 text-right">
 
-                    <p class="announcement-heading">56</p>
+                    <p class="announcement-heading">12</p>
 
-                    <p class="announcement-text">New Orders!</p>
+                    <p class="announcement-text">Feedback!</p>
 
                   </div>
 
@@ -316,7 +318,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <div class="col-xs-6">
 
-                      Complete Orders
+                      Messages
 
                     </div>
 
@@ -348,7 +350,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
               <div class="panel-heading">
 
-                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Traffic Statistics: October 1, 2013 - October 31, 2013</h3>
+                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Profit Statistics: October 14, 2014 - October 14, 2015</h3>
 
               </div>
 
@@ -374,7 +376,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
               <div class="panel-heading">
 
-                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Traffic Sources: October 1, 2013 - October 31, 2013</h3>
+                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Profit Statistics: October 14, 2014 - October 14, 2015/h3>
 
               </div>
 
@@ -420,7 +422,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <span class="badge">4 minutes ago</span>
 
-                    <i class="fa fa-comment"></i> Commented on a post
+                    <i class="fa fa-comment"></i> Replied for the messages
 
                   </a>
 
@@ -428,7 +430,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <span class="badge">23 minutes ago</span>
 
-                    <i class="fa fa-truck"></i> Order 392 shipped
+                    <i class="fa fa-truck"></i> ep arrived
 
                   </a>
 
@@ -452,7 +454,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <span class="badge">2 hours ago</span>
 
-                    <i class="fa fa-check"></i> Completed task: "pick up dry cleaning"
+                    <i class="fa fa-check"></i> Completed task: "Petty cash sent"
 
                   </a>
 
@@ -460,7 +462,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <span class="badge">yesterday</span>
 
-                    <i class="fa fa-globe"></i> Saved the world
+                    <i class="fa fa-globe"></i> GCDP project done
 
                   </a>
 
@@ -468,7 +470,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <span class="badge">two days ago</span>
 
-                    <i class="fa fa-check"></i> Completed task: "fix error on sales page"
+                    <i class="fa fa-check"></i> Completed task: "new LC added"
 
                   </a>
 
@@ -506,13 +508,13 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                       <tr>
 
-                        <th>Order # <i class="fa fa-sort"></i></th>
+                        <th>invoice # <i class="fa fa-sort"></i></th>
 
-                        <th>Order Date <i class="fa fa-sort"></i></th>
+                        <th>invoice Date <i class="fa fa-sort"></i></th>
 
-                        <th>Order Time <i class="fa fa-sort"></i></th>
+                        <th>invoice Time <i class="fa fa-sort"></i></th>
 
-                        <th>Amount (USD) <i class="fa fa-sort"></i></th>
+                        <th>Amount (LKR) <i class="fa fa-sort"></i></th>
 
                       </tr>
 
@@ -528,7 +530,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                         <td>3:29 PM</td>
 
-                        <td>$321.33</td>
+                        <td>Rs321.33</td>
 
                       </tr>
 
@@ -540,7 +542,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                         <td>3:20 PM</td>
 
-                        <td>$234.34</td>
+                        <td>Rs234.34</td>
 
                       </tr>
 
@@ -552,7 +554,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                         <td>3:03 PM</td>
 
-                        <td>$724.17</td>
+                        <td>Rs724.17</td>
 
                       </tr>
 
@@ -564,7 +566,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                         <td>3:00 PM</td>
 
-                        <td>$23.71</td>
+                        <td>Rs23.71</td>
 
                       </tr>
 
@@ -576,7 +578,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                         <td>2:49 PM</td>
 
-                        <td>$8345.23</td>
+                        <td>Rs8345.23</td>
 
                       </tr>
 
@@ -588,7 +590,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                         <td>2:23 PM</td>
 
-                        <td>$245.12</td>
+                        <td>Rs245.12</td>
 
                       </tr>
 
@@ -600,7 +602,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                         <td>2:15 PM</td>
 
-                        <td>$5663.54</td>
+                        <td>Rs5663.54</td>
 
                       </tr>
 
@@ -612,7 +614,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                         <td>2:13 PM</td>
 
-                        <td>$943.45</td>
+                        <td>Rs943.45</td>
 
                       </tr>
 

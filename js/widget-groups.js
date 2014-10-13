@@ -26,7 +26,7 @@ function groupsWidget(widget_id, options) {
 
 	
 	// Ok, set up the widget
-	var html = "<div class='panel panel-primary'><div class='panel-heading'><h3 class='panel-title'>User Groups</h3></div><div class='panel-body'><ul class='list-group'>";
+	var html = "<div class='panel panel-primary'><div class='panel-heading'><h3 class='panel-title'>Committees</h3></div><div class='panel-body'><ul class='list-group'>";
 	
 	// Load action permits for all groups
 	var actions = loadGroupActions();

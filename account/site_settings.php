@@ -175,7 +175,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
                     </div>
 
                 </div>
-
+<!--
                 <div class="form-group">
 
                     <label for="inputThreshold" class="col-sm-4 control-label">Account Activation Threshold</label>
@@ -211,7 +211,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
                     </div>
 
                 </div>
-
+-->
                 <div class="form-group">
 
                     <div class="col-sm-offset-4 col-sm-8">

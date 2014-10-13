@@ -83,7 +83,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
               <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
 
             </ol>
-
+<!--
             <div class="alert alert-success alert-dismissable">
 
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -103,7 +103,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
               <br>All components are copyright of their respective creators.
 
             </div>
-
+-->
           </div>
 
         </div><!-- /.row -->
@@ -125,7 +125,6 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
               </div>
 
               <div class="panel-body">
-
                 <div class="list-group">
 
                   <a href="#" class="list-group-item">
@@ -140,7 +139,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <span class="badge">4 minutes ago</span>
 
-                    <i class="fa fa-comment"></i> Commented on a post
+                    <i class="fa fa-comment"></i> Replied for the messages
 
                   </a>
 
@@ -148,7 +147,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <span class="badge">23 minutes ago</span>
 
-                    <i class="fa fa-truck"></i> Order 392 shipped
+                    <i class="fa fa-truck"></i> ep arrived
 
                   </a>
 
@@ -172,7 +171,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <span class="badge">2 hours ago</span>
 
-                    <i class="fa fa-check"></i> Completed task: "pick up dry cleaning"
+                    <i class="fa fa-check"></i> Completed task: "Petty cash sent"
 
                   </a>
 
@@ -180,7 +179,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <span class="badge">yesterday</span>
 
-                    <i class="fa fa-globe"></i> Saved the world
+                    <i class="fa fa-globe"></i> GCDP project done
 
                   </a>
 
@@ -188,7 +187,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                     <span class="badge">two days ago</span>
 
-                    <i class="fa fa-check"></i> Completed task: "fix error on sales page"
+                    <i class="fa fa-check"></i> Completed task: "new LC added"
 
                   </a>
 
