@@ -82,7 +82,7 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
 		  <div class="col-lg-12">
 
-			<h2>LC-level action authorization</h2>
+			<h2>committee-level action authorization</h2>
 
 <!--			<div class='alert alert-info'>This feature allows you to specify group-level permissions for specific types of actions (e.g. create users, delete users, create groups, etc).  You can also specify certain contexts for these permissions through the use of permits.  For example, you could specify a permit that only allows deleting users in certain groups.</div>
 -->

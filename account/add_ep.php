@@ -147,25 +147,17 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                 </div>
 
+                <div class="form-group">
 
-
-                <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-
-                    <label for="inputEndDate" class="col-sm-4 control-label"> End Date</label>
+                    <label for="inputStartDate" class="col-sm-4 control-label">End Date</label>
 
                     <div class="col-sm-8">
-                        <i class="fa fa-calendar"></i>
-                        <input type="text" class="form-control" value="" id="dpd2">                      
-                        <input class="span2" size="16" type="text" value="12-02-2012">
+                        
+                        <input type="text" class="form-control" value="" id="dpd2">                       
+
                     </div>
 
                 </div>
-
-                
-    
-  <span class="add-on"><i class="icon-th"></i></span>
-</div>
-       
 
 <script>
 
