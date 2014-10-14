@@ -108,7 +108,227 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
         </div><!-- /.row -->
 
+        
+        <div class="row">
 
+          <div class="col-lg-3">
+
+            <div class="panel panel-info">
+
+              <div class="panel-heading">
+
+                <div class="row">
+
+                  <div class="col-xs-6">
+
+                    <i class="fa fa-comments fa-5x"></i>
+
+                  </div>
+
+                  <div class="col-xs-6 text-right">
+
+                    <p class="announcement-heading">6</p>
+
+                    <p class="announcement-text">Event Alerts !</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <a href="#">
+
+                <div class="panel-footer announcement-bottom">
+
+                  <div class="row">
+
+                    <div class="col-xs-6">
+
+                      View Events
+
+                    </div>
+
+                    <div class="col-xs-6 text-right">
+
+                      <i class="fa fa-arrow-circle-right"></i>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-3">
+
+            <div class="panel panel-warning">
+
+              <div class="panel-heading">
+
+                <div class="row">
+
+                  <div class="col-xs-6">
+
+                    <i class="fa fa-check fa-5x"></i>
+
+                  </div>
+
+                  <div class="col-xs-6 text-right">
+
+                    <p class="announcement-heading">12</p>
+
+                    <p class="announcement-text">To-Do Items</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <a href="#">
+
+                <div class="panel-footer announcement-bottom">
+
+                  <div class="row">
+
+                    <div class="col-xs-6">
+
+                      Complete
+
+                    </div>
+
+                    <div class="col-xs-6 text-right">
+
+                      <i class="fa fa-arrow-circle-right"></i>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-3">
+
+            <div class="panel panel-danger">
+
+              <div class="panel-heading">
+
+                <div class="row">
+
+                  <div class="col-xs-6">
+
+                    <i class="fa fa-tasks fa-5x"></i>
+
+                  </div>
+
+                  <div class="col-xs-6 text-right">
+
+                    <p class="announcement-heading">3</p>
+
+                    <p class="announcement-text">Petty cash  </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <a href="#">
+
+                <div class="panel-footer announcement-bottom">
+
+                  <div class="row">
+
+                    <div class="col-xs-6">
+
+                       notifications
+
+
+                    </div>
+
+                    <div class="col-xs-6 text-right">
+
+                      <i class="fa fa-arrow-circle-right"></i>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-3">
+
+            <div class="panel panel-success">
+
+              <div class="panel-heading">
+
+                <div class="row">
+
+                  <div class="col-xs-6">
+
+                    <i class="fa fa-comments fa-5x"></i>
+
+                  </div>
+
+                  <div class="col-xs-6 text-right">
+
+                    <p class="announcement-heading">12</p>
+
+                    <p class="announcement-text">Feedback!</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <a href="#">
+
+                <div class="panel-footer announcement-bottom">
+
+                  <div class="row">
+
+                    <div class="col-xs-6">
+
+                      Messages
+
+                    </div>
+
+                    <div class="col-xs-6 text-right">
+
+                      <i class="fa fa-arrow-circle-right"></i>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div><!-- /.row -->
 
 
 

@@ -55,37 +55,29 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
         ?>  
 
 
-
 <div id="page-wrapper">
 
-<div class="row">
 
-    <div id='display-alerts' class="col-lg-12">
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            
+
+    ADD EP
 
 
-
+        </a>
+      </h4>
     </div>
-
-</div>
-
-<h1>ADD EP</h1>
-
-
-<div class='row'>
-
-<div id='regbox' class='col-lg-6'>
-
-    <div class='panel panel-primary'>
-
-        <div class='panel-heading'>
-
-            <h3 class='panel-title'>EP details</h3>
-
-        </div>
-
-        <div class='panel-body'>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+         <div class='panel-body'>
 
             <form class='form-horizontal' role='form' name='addEP' action='' method='post'>
+
+            <fieldset>
+                <legend><b>Personal Information</b></legend>
 
                 <div class="form-group">
 
@@ -135,6 +127,23 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
 
                 </div>
 
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>Project Information</b> </legend>
+
+                <div class="form-group">
+
+                    <label for="inputEpId" class="col-sm-4 control-label"> Project-ID </label>
+
+                    <div class="col-sm-8">
+
+                        <input type='text' id="inputEpId" class="form-control" name='ep_id'/>
+
+                    </div>
+
+                </div>
+
                 <div class="form-group">
 
                     <label for="inputStartDate" class="col-sm-4 control-label"> Start Date</label>
@@ -158,6 +167,101 @@ setReferralPage(getAbsoluteDocumentPath(__FILE__));
                     </div>
 
                 </div>
+
+                <div class="form-group">
+
+                    <label for="inputStartDate" class="col-sm-4 control-label">Committee</label>
+
+                    <div class="col-sm-8">
+                        
+                        <select class="form-control" id="sel1">
+                            <option>CCLC</option>
+                            <option>CNLC</option>
+                            <option>JLC</option>
+                            <option>CSLC</option>
+                        </select>                       
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="inputStartDate" class="col-sm-4 control-label">End Date</label>
+
+                    <div class="col-sm-8" pading = "5px">
+                        <label class="radio-inline"> 
+                            <input type="radio" name="optradio">Raised
+                        </label>
+                        <label class="radio-inline"> 
+                            <input type="radio" name="optradio">Matched
+                        </label>
+                        <label class="radio-inline"> 
+                            <input type="radio" name="optradio">Realized
+                        </label>
+                
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="inputStartDate" class="col-sm-4 control-label">Function</label>
+
+                    <div class="col-sm-8">
+                        
+                        <select class="form-control" id="sel1">
+                            <option>GCDP</option>
+                            <option>GIP</option>
+                            <option>OGX</option>
+                            <option>ICX</option>
+                        </select>                       
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="inputCountry" class="col-sm-4 control-label">EP Fee </label>
+
+                    <div class="col-sm-8">
+
+                        <input type='text' id="inputCountry" class="form-control" name='ep_Country'/>
+
+                    </div>
+
+</div>
+
+                
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="#" class="btn btn-info btn-lg">submit</a>
+                
+                </fieldset>
+      </div>
+    </div>
+  </div>
+
+       
+
+
+
 
 <script>
 
