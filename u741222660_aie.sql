@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `uf_configuration` (
 
 --
 -- Dumping data for table `uf_configuration`
---
+
 
 INSERT INTO `uf_configuration` (`id`, `name`, `value`) VALUES
 (1, 'website_name', 'AIEFIN'),
