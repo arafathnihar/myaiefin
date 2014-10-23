@@ -33,7 +33,7 @@ echo renderAccountPageHeader(array(
     <div id="wrapper">
         <!-- Sidebar -->
 
-        <?php echo renderMenu( "income"); 
+        <?php echo renderMenu( "income-c"); 
 
         ?>
 
